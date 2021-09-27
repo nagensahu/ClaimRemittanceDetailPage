@@ -1,5 +1,36 @@
 <template>
   <lightning-card title="Recovery">
+
+    <lightning-card>
+      <lightning-layout class="slds-border_top slds-border_bottom">
+        <lightning-layout-item size="1" padding="around-large">
+          <div>
+            <lightning-input type="checkbox-button" label=" " name="amountname">
+            </lightning-input>
+          </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="2" padding="around-large">
+          <p class="slds-form-element__label" title="Line of Business">Line of Business</p>
+          <p>MEDICARE ADVANTAGE</p>
+        </lightning-layout-item>
+        <lightning-layout-item size="2" padding="around-large">
+          <p class="slds-form-element__label" title="Create Date">Create Date</p>
+          <p>05/03/2020</p>
+        </lightning-layout-item>
+        <lightning-layout-item size="2" padding="around-large">
+          <p class="slds-form-element__label" title="Over Payment">Over Payment</p>
+          <p>$593.27</p>
+        </lightning-layout-item>
+        <lightning-layout-item size="2" padding="around-large">
+          <p class="slds-form-element__label" title="Remaining Amount">Remaining Amount</p>
+          <p>$0.00</p>
+        </lightning-layout-item>
+        <lightning-layout-item size="2" padding="around-large">
+          <p class="slds-form-element__label" title="Auto Recovery">Auto Recovery</p>
+          <p>Yes</p>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-card>
     <div class="slds-p-around_medium">
       <lightning-datatable key-field="id" data={lineitemData} columns={lineitemColumns} column-widths-mode="auto"
         hide-checkbox-column>
